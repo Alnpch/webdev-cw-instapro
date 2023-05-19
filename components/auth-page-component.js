@@ -107,6 +107,7 @@ export function renderAuthPageComponent({ appEl, setUser }) {
         const login = document.getElementById("login-input").value;
         const name = document.getElementById("name-input").value;
         const password = document.getElementById("password-input").value;
+        let imageUrl = document.querySelector('.file-upload-image') ? document.querySelector('.file-upload-image').src : null ; 
         if (!name) {
           alert("Введите имя");
           return;
